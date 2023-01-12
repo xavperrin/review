@@ -82,7 +82,7 @@ const getRandomItem=()=>{
 
   nextBtn.addEventListener('click', ()=>{
     currentItem===reviews.length-1?currentItem=0:currentItem+=1;
-    updateDisplay(currentItem);
+    showPerson(currentItem);
 });
 
 
