@@ -69,7 +69,7 @@ const reviews = [
     showPerson(currentItem);
   });
 
-
+// show previous person
   prevBtn.addEventListener('click', ()=>{
     currentItem===0?currentItem=reviews.length-1:currentItem-=1;
     showPerson(currentItem);
@@ -79,14 +79,14 @@ const getRandomItem=()=>{
   randomNumber=getRandomNumber();
   randomNumber===currentItem?getRandomItem():currentItem=randomNumber;
 }
-
-  nextBtn.addEventListener('click', ()=>{
+// show next person
+nextBtn.addEventListener('click', ()=>{
     currentItem===reviews.length-1?currentItem=0:currentItem+=1;
     showPerson(currentItem);
 });
 
 
-
+// show random person
   ranBtn.addEventListener('click', ()=>{
       
       getRandomItem();
